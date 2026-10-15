@@ -1,7 +1,8 @@
-# Python A-C
-#Grade book Management System
+# Grade book Management System
+## Python Program Sections A-D
 
-##Section A 
+
+###Section A 
 Purpose: To accep user input, display outputs and process scalar data
 How??: The program initially asks the user for the total number of students they intend to record data on . To accommodate for the different data that will be recorded they were divided into lists for the grades and thestudents themselves
 For the grades they had to be between 0 and 100 and therefore operators we're used to ensure these conditions are met before any other calculations can be done and if not met the user is prompted to enter the correct data.
@@ -9,7 +10,7 @@ The correct data is then added to the end of the list students
 
 With the grades entered the program uses mathematical operators and expressions to calculate the sum of marks and the class average and in the end showing all this data in an organised report.
 
-#Section A
+####Section A
 number_of_students = int(input("Please enter the total number of students: "))
 grade = []
 students = []
@@ -31,7 +32,7 @@ for student in students:
 
 Output: The report showing the Name, grade and class average
 
-##Section B
+###Section B
 Purpose: Change list into tuple to handle multipe records
 How??
 In order to expand the data that was already entered in Section A, it is important that the Management system allows one to enter names of students and their 3 subjects until range is filled. This was done by iterating over the empty lists to enter data for those students and subjects while ensuring that they fall within the expected conditions range.
@@ -87,7 +88,7 @@ for name,grades in students_other:
     print("-" * 44) # prints dashed line 44 characters long
 
 
-##Section C 
+### Section C 
 #####Purpose : Change list of tuples into dictionary
 #####How?? In order to link the variables and data in the other program file the list of tuples had to be imported at the start of the program . A new empty dictionary was created(student_dict) to store the keys( names) as a separate dictionary and the values(grades) as a separate dictionary as well.
 #####Main Functions : def_add_student(name, grade)
@@ -152,7 +153,7 @@ while True:
      else:
          print(f"No student found with the name {feature}")
 
-##SECTION D
+### SECTION D
 #####Purpose: The sole reason behind the logic in this section is to combine the logic from the different codes in sections a,b and c in order to modularize them into functions to allow for error handling and adding functionality to the program.
 
 #####How?? The code makes use of the add_student(), avg_student(), display_student(), student_summary and 
